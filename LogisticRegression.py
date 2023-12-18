@@ -21,10 +21,7 @@ from sklearn.metrics import accuracy_score
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-data=pd.read_csv("heart_failure_clinical_records_dataset.csv")
-print(data.isnull().sum())
-x=data.iloc[:,:-1]
-y=data.iloc[:,-1]
+
 
 x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.8)
 
